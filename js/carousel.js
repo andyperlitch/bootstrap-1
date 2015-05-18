@@ -64,7 +64,7 @@
     return this
   }
 
-  Carousel.prototype.getItemIndex = function (item) {
+  Carousel.prototype.getItemIndex = function (items) {
     this.$items = item.parent().children('.item')
     return this.$items.index(item || this.$active)
   }
